@@ -1,10 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 
 export default class Contact extends Component {
     render() {
         return (
             <div className="container-fluid bg-light">
-                <p className="lead">This is the contact page</p>
+                <Navbar/>
+                <Header content="This is the contact page!"/>
             </div>
         )
     }

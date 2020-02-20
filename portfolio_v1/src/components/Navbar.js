@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { Route } from "react-router-dom";
+// import { Route } from "react-router-dom";
+// import Homepage from "../pages/Homepage"
+import {link, animateScroll as scroll } from "react-scroll";
 
-import Homepage from "../pages/Homepage"
 
 export default class Navbar extends Component {
     render() {
@@ -19,7 +20,7 @@ export default class Navbar extends Component {
                             <a className="nav-link" href="/experience">Experience</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/projects">Projects</a>
+                            <a className="nav-link" href="/photos">Photos</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="/contact">Contact</a>

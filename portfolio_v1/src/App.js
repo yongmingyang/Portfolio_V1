@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
+import Photos from "./pages/Photos";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Route path="/about" component = {About}/>
       <Route path="/experience" component = {Experience}/>
       <Route path="/contact" component = {Contact}/>
-      <Route path="/projects" component = {Projects}/>
+      <Route path="/photos" component = {Photos}/>
     </Router>
   );
 }
