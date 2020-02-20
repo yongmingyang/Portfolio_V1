@@ -1,33 +1,22 @@
 import React, { Component } from 'react'
+import { Navigation, Header,} from "react-mdl";
 // import { Route } from "react-router-dom";
 // import Homepage from "../pages/Homepage"
-import {link, animateScroll as scroll } from "react-scroll";
+import {Link} from "react-router-dom"
+// import {Link, animateScroll as scroll } from "react-scroll";
 
 
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="/">MY</a>
-                
-
-                <div className="collapse navbar-collapse" id="navbarColor03">
-                    <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/about">About</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/experience">Experience</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/photos">Photos</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/contact">Contact</a>
-                        </li>
-                    </ul>        
-                </div>
-            </nav>
+            <Header className="header-color" title="MY" scroll>
+                <Navigation>
+                    <Link to="/about">About</Link>
+                    <Link to="/experience">Experience</Link>
+                    <Link to="/photos">Photos</Link>
+                    <Link to="/contact">Contact</Link>
+                </Navigation>
+            </Header>
         )
     }
 }
